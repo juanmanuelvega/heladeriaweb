@@ -1,0 +1,37 @@
+<form action="index.php" method="post" enctype= "multipart/form-data">
+  <div class="form-group">
+    <label for="txtRubrosId">Código:</label>
+    <input type="text" id="txtRubrosId" name="txtRubrosId" value="{rubrosid}" class="form-control" readonly="readonly"/>
+  </div>
+  <div class="form-group">
+    <label for="txtRubrosNombre">Rubro:</label>
+    <input type="text" id="txtRubrosNombre" name="txtRubrosNombre" value="{rubrosnombre}" class="form-control"/>
+  </div>
+  
+   <!-- <div class="form-group">
+ 
+   <img src="static\imagenes\{rubrosfoto}" class="img-thumbnail"/>
+  </div>
+  <div class="form-group">
+    <label for="filRubrosFoto">Foto:</label>
+    <input type="file" id="filRubrosFoto" name="filRubrosFoto" value="{rubrosfoto}" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label for="cboRubro">Rubros:</label>
+    <select id="cboRubro" name="cboRubro" class="form-control"> 
+      {contenidoCboRubro}
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="txtRubrosObservaciones">Observaciones:</label>
+    <textarea id="txtRubrosObservaciones" name="txtRubrosObservaciones" class="form-control"/>{rubrosobservaciones}
+    </textarea>
+    
+  </div>
+  <input type="hidden" name="hidRubrosFoto" value="{rubrosfoto}" />
+  -->
+  <input type="hidden" name="seccion" value="rubros" />
+  <input type="hidden" name="accion" value="guardarEdicion" />
+  <input type="submit" value="Guardar" class="btn btn-default" />
+</form>

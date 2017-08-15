@@ -1,0 +1,37 @@
+<form action="index.php" method="post" enctype= "multipart/form-data">
+  <div class="form-group">
+    <label for="txtLocalidadesId">Código:</label>
+    <input type="text" id="txtLocalidadesId" name="txtLocalidadesId" value="{localidadesid}" class="form-control" readonly="readonly"/>
+  </div>
+  <div class="form-group">
+    <label for="txtLocalidadesNombre">Localidad:</label>
+    <input type="text" id="txtLocalidadesNombre" name="txtLocalidadesNombre" value="{localidadesnombre}" class="form-control"/>
+  </div>
+  
+   <!-- <div class="form-group">
+ 
+   <img src="static\imagenes\{localidadesfoto}" class="img-thumbnail"/>
+  </div>
+  <div class="form-group">
+    <label for="filLocalidadesFoto">Foto:</label>
+    <input type="file" id="filLocalidadesFoto" name="filLocalidadesFoto" value="{localidadesfoto}" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label for="cboLocalidad">Localidades:</label>
+    <select id="cboLocalidad" name="cboLocalidad" class="form-control"> 
+      {contenidoCboLocalidad}
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="txtLocalidadesObservaciones">Observaciones:</label>
+    <textarea id="txtLocalidadesObservaciones" name="txtLocalidadesObservaciones" class="form-control"/>{localidadesobservaciones}
+    </textarea>
+    
+  </div>
+  <input type="hidden" name="hidLocalidadesFoto" value="{localidadesfoto}" />
+  -->
+  <input type="hidden" name="seccion" value="localidades" />
+  <input type="hidden" name="accion" value="guardarEdicion" />
+  <input type="submit" value="Guardar" class="btn btn-default" />
+</form>

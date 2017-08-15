@@ -1,0 +1,47 @@
+<form action="index.php" method="post" enctype= "multipart/form-data">
+  <div class="form-group">
+    <label for="txtProductosId">Código:</label>
+    <input type="text" id="txtProductosId" name="txtProductosId" value="{productosid}" class="form-control" readonly="readonly"/>
+  </div>
+  <div class="form-group">
+    <label for="txtProductosDescripcion">Producto:</label>
+    <input type="text" id="txtProductosDescripcion" name="txtProductosDescripcion" value="{productosdescripcion}" class="form-control"/>
+  </div>
+    <div class="form-group">
+    <label for="txtProductosPrecio">Precio</label>
+    <input type="text" id="txtProductosPrecio" name="txtProductosPrecio" value="{productosprecio}" class="form-control"/>
+  </div>
+    <div class="form-group">
+    <label for="cboRubro">Rubros:</label>
+    <select id="cboRubro" name="cboRubro" class="form-control"> 
+      {contenidoCboRubro}
+    </select>
+  </div>
+    
+   <!-- <div class="form-group">
+ 
+   <img src="static\imagenes\{productosfoto}" class="img-thumbnail"/>
+  </div>
+  <div class="form-group">
+    <label for="filProductosFoto">Foto:</label>
+    <input type="file" id="filProductosFoto" name="filProductosFoto" value="{productosfoto}" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label for="cboProducto">Productos:</label>
+    <select id="cboProducto" name="cboProducto" class="form-control"> 
+      {contenidoCboProducto}
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="txtProductosObservaciones">Observaciones:</label>
+    <textarea id="txtProductosObservaciones" name="txtProductosObservaciones" class="form-control"/>{productosobservaciones}
+    </textarea>
+    
+  </div>
+  <input type="hidden" name="hidProductosFoto" value="{productosfoto}" />
+  -->
+  <input type="hidden" name="seccion" value="productos" />
+  <input type="hidden" name="accion" value="guardarEdicion" />
+  <input type="submit" value="Guardar" class="btn btn-default" />
+</form>
